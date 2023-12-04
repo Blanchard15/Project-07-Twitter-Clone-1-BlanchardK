@@ -193,3 +193,8 @@ body{
     justify-content: center;
     gap: 20px;
 }
+
+.button-style{
+    background: none;
+    border: none;
+}
