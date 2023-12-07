@@ -6,10 +6,17 @@ import AvatarCnn from "../images/tweet-profile-photo.png"
 import Image1 from "../images/image 1 (3).png"
 import TweetImage from "../images/tweet-image.png"
 import Tweeter from "../images/image 1 (4).png"
+import Sidebar from '../components/sidebar';
+import Twitter from "../icons/Twitter.png";
 
 function Home() {
 
   return (
+    <>
+    <div className="left-sidebar">
+        <Sidebar userAvatar={Twitter} alt="twitter"/>
+
+    </div>
     <main className="timeline">
 
       <Header />
@@ -20,7 +27,7 @@ function Home() {
       <Tweet userAvatar={Tweeter} titleAuthor={"Tweeter"} AbbrTitle={"@Tweeter"} times={"Oct 4"} paragraph={'hello literally everyone'} countButon={"118.7k"} countRetweet={"785.4k"} countReact={"3.3M"} />
       <Tweet userAvatar={Tweeter} titleAuthor={"Tweeter"} AbbrTitle={"@Tweeter"} times={"Oct 4"} paragraph={'hello literally everyone'} images={TweetImage} countButon={"118.7k"} countRetweet={"785.4k"} countReact={"3.3M"} />
     </main>
-
+    </>
   );
 
 }
